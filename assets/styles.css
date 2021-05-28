@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+#main {
+    width: 100%;
+    height: auto;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 46px;
+    color: #fff;
+    background-color: #000;
+    z-index: 100;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+}
+
+#nav>ul>li:hover>a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav li a {
+    color: #fff;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+#more:hover #sub-nav {
+    display: block;
+}
+
+#sub-nav {
+    display: none;
+    width: inherit;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 2px 3px 0 #fff;
+}
+
+#sub-nav li {
+    width: 100%;
+}
+
+#sub-nav li a {
+    line-height: 38px;
+    color: #000;
+    min-width: 200px;
+    padding: 0 24px;
+    text-transform: capitalize;
+}
+
+#sub-nav li:hover a {
+    background-color: #ccc;
+}
+
+#search-button {
+    float: right;
+    line-height: 46px;
+    padding: 0 21px;
+}
+
+#search-button:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+
+/* Slider */
+
+#slider1 {
+    background-image: url('/images/chicago.jpg');
+}
+
+#slider2 {
+    background-image: url('/images/la.jpg');
+    display: none;
+}
+
+#slider3 {
+    display: none;
+    background-image: url('/images/ny.jpg');
+}
+
+.slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    /*padding op = 50% chieu rong cua phan tu*/
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+.slider .text-content {
+    position: absolute;
+    bottom: 15%;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.text-content>h2 {
+    padding: 20px;
+    font-weight: lighter;
+}
+
+.text-content>p {
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.sub-title h2 {
+    font-weight: lighter;
+    margin: 10px auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sub-title i {
+    margin: 15px auto;
+    font-family: 'Lato', sans-serif;
+    opacity: 0.6;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+}
+
+#content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#band {
+    width: 800px;
+    padding: 64px 16px;
+    margin: 0 auto;
+}
+
+#band>p {
+    font-size: 15px;
+    text-align: justify;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+#list-member {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 32px 0;
+}
+
+#list-member .member {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#list-member .member p {
+    text-align: center;
+    font-size: 15px;
+    margin: 15px auto;
+}
+
+#list-member img {
+    width: 60%;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+#contain-tour {
+    width: 100%;
+    background-color: #000;
+}
+
+#tour {
+    padding: 64px 16px;
+    margin: 0 auto;
+    width: 800px;
+}
+
+#tour li {
+    background-color: #fff;
+    padding: 8px 16px;
+    font-size: 15px;
+    color: #757575;
+    line-height: 22.5px;
+    border-bottom: solid 1px rgb(221, 221, 221);
+}
+
+#tour .sub-title {
+    color: #fff;
+}
+
+#list-months {
+    margin-top: 32px;
+}
+
+#list-months span {
+    color: #fff;
+    background-color: #f44336;
+    padding: 2px 8px;
+    margin-left: 16px;
+}
+
+#list-months #number-three {
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    float: right;
+    margin-right: 24px;
+}
+
+#list-tickets {
+    display: flex;
+    padding: 32px 0px;
+    margin: 0 -8px;
+}
+
+.ticket {
+    background-color: #fff;
+    width: 33.33333%;
+    box-sizing: border-box;
+    background-clip: content-box;
+    padding: 0 8px;
+    margin-bottom: 16px;
+    font-size: 15px;
+}
+
+.ticket img {
+    width: 100%;
+    box-sizing: inherit;
+}
+
+.name-place {
+    font-weight: bolder;
+    margin: 15px 16px;
+}
+
+.date {
+    margin: 15px 16px;
+    opacity: 0.6;
+}
+
+.about {
+    margin: 15px 16px;
+}
+
+.ticket button {
+    margin: 15px 16px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    padding: 8px 16px;
+}
+
+#contact {
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+    padding: 64px 16px 96px 16px;
+}
+
+#contact .content-contact {
+    width: 100%;
+    display: flex;
+    padding: 32px 0px;
+}
+
+.left-content,
+.right-content {
+    width: 50%;
+}
+
+#contact>span {
+    display: block;
+    clear: left;
+    float: right;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 16px;
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.right-content input {
+    padding: 8px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.right-content>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#name-input {
+    margin-right: 8px;
+}
+
+#email-input {
+    margin-left: 8px;
+}
+
+#message-input {
+    margin-top: 8px;
+}
+
+.left-content {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.left-content .fas {
+    padding-right: 16px;
+}
+
+#map img {
+    width: 100%;
+    height: auto;
+}
+
+#footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 64px 16px;
+    opacity: 0.7;
+}
+
+#footer p {
+    margin: 15px;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+}
+
+#footer a {
+    color: #000;
+    text-decoration-line: underline;
+}
+
+#footer i:hover {
+    color: grey;
+}
