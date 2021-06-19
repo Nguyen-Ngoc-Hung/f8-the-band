@@ -99,17 +99,17 @@ li {
 /* Slider */
 
 #slider1 {
-    background-image: url('/images/chicago.jpg');
+    background-image: url('https://raw.githubusercontent.com/Nguyen-Ngoc-Hung/f8-the-band/master/images/chicago.jpg');
 }
 
 #slider2 {
-    background-image: url('/images/la.jpg');
+    background-image: url('https://raw.githubusercontent.com/Nguyen-Ngoc-Hung/f8-the-band/master/images/la.jpg');
     display: none;
 }
 
 #slider3 {
     display: none;
-    background-image: url('/images/ny.jpg');
+    background-image: url('https://raw.githubusercontent.com/Nguyen-Ngoc-Hung/f8-the-band/master/images/ny.jpg');
 }
 
 .slider {
